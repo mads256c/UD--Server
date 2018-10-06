@@ -32,7 +32,7 @@ if ($conn->connect_error) {
 }
 
 if (isset($_POST["replyId"])) {
-    
+
     $query = $conn->query("INSERT INTO `comments` (Name, Text, ReplyTo, ConversationId, UserId) VALUES ('$name', '$text', '$replyId', '$conversationId', '$userId')");
 }
 else
